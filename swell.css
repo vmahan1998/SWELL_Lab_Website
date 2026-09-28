@@ -388,6 +388,7 @@ input[aria-invalid=true], textarea[aria-invalid=true] { border: 2px solid var(--
 .news-brief .news-category { margin-top: 0; }
 .news-brief h3 { font-size: var(--font-size-min); }
 .news-brief img { width: 56px; height: 75px; object-fit: cover; object-position: center 30%; }
+.news-brief img.portrait { object-position: center 25%; }
 .news-archive { margin: 3.5rem 0 4rem; border-top: 1px solid var(--line); padding-top: 2rem; }
 .news-archive > h2 { padding: .8rem 0; border-block: 1px solid var(--line); margin: 0; }
 .news-archive-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
