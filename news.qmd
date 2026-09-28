@@ -41,7 +41,7 @@ description: "Research updates, publications, and news from SWELL Lab at the Uni
     </article>
     <div class="news-side">
       <article class="news-story"><a href="#pecs-2026"><img class="news-conference-logo" src="images/pecs2026logo.jpg" alt="PECS 2026 conference logo with coastal illustrations in the shape of Maine." width="1440" height="959"><p class="news-category">Conferences</p><h2>SWELL helps bring PECS 2026 to Portland, Maine</h2><p class="news-credit"><time datetime="2026-08-09">August 9</time>&ndash;<time datetime="2026-08-14">14, 2026</time></p></a></article>
-      <article class="news-story"><a href="#vanessa-defense"><img src="images/landscape/University_landscape.jpg" alt="Illustrative campus view: University of Maine buildings and green spaces beside the river." width="1200" height="674"><p class="news-category">Lab milestones</p><h2>Vanessa's Defense</h2><p class="news-credit"><time datetime="2026-04-17">April 17, 2026</time></p></a></article>
+      <article class="news-story"><a href="#vanessa-defense"><img src="images/IMG_3036.JPG" alt="Vanessa in doctoral regalia holding books between library shelves." width="3265" height="4898"><p class="news-category">Lab milestones</p><h2>Vanessa's Defense</h2><p class="news-credit"><time datetime="2026-04-17">April 17, 2026</time></p></a></article>
     </div>
     <section class="news-briefs" aria-labelledby="in-focus-title">
       <h2 id="in-focus-title" class="news-section-label">In focus</h2>
