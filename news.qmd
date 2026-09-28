@@ -89,11 +89,11 @@ description: "Research updates, publications, and news from SWELL Lab at the Uni
     <p class="news-category">Lab milestones &middot; <time datetime="2026-04-17">April 17, 2026</time></p>
     <h2 id="vanessa-defense-title">Vanessa's Defense</h2>
     <figure class="news-photo">
-      <div class="photo-placeholder news-photo-placeholder"><span class="placeholder-mark" aria-hidden="true">SW</span><span>Vanessa's defense photo forthcoming</span></div>
+      <img src="images/IMG-20260417-WA0017.jpg" alt="Vanessa holding flowers and a plush toy, surrounded by a group celebrating her defense." width="5120" height="3840" loading="lazy" decoding="async">
       <figcaption>Vanessa's Defense &middot; April 17, 2026</figcaption>
     </figure>
     <p class="lead">Vanessa Mahan Quintana's defense took place on April 17, 2026.</p>
-    <p>More details and photographs from the day will be added here.</p>
+    <p>More details from the day will be added here.</p>
     <p><a href="people.html#vanessa-name">Meet Vanessa</a></p>
     <!-- Add the supplied defense title, recap, and event photographs here. -->
   </article>
