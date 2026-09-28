@@ -76,8 +76,8 @@ description: "Explore SWELL Lab research in coastal flooding, estuarine dynamics
       <div class="activity-copy"><p class="eyebrow">Exchange methods</p><h3>Workshop facilitation</h3><p>We facilitate workshops that bring people together to discuss coastal research, exchange methods, and learn from one another.</p></div>
     </article>
     <article class="activity-card">
-      <figure><img src="images/20260326_103600.jpg" alt="Three researchers stand beside a coastal research poster in a busy poster session." width="4000" height="3000" loading="lazy" decoding="async"><figcaption>Sharing coastal research at a poster session.</figcaption></figure>
-      <div class="activity-copy"><p class="eyebrow">Share the science</p><h3>PECS &amp; conference participation</h3><p>Conference participation and travel connect our work with the wider research community. Through presentations, discussion, and involvement in the Physics of Estuaries and Coastal Seas (PECS) conference, we share findings and build collaborations.</p><p><a href="news.html#pecs-2026">Read about SWELL at PECS 2026 <span aria-hidden="true">↗</span></a></p></div>
+      <figure><img src="images/20260326_103600.jpg" alt="Three researchers stand beside a coastal research poster at the 2026 Maine Sustainability and Water Conference." width="4000" height="3000" loading="lazy" decoding="async"><figcaption>Sharing coastal research at the Maine Sustainability &amp; Water Conference in Augusta, March 26, 2026.</figcaption></figure>
+      <div class="activity-copy"><p class="eyebrow">Share the science</p><h3>Conference participation</h3><p>We shared coastal research at the <a href="https://umaine.edu/mitchellcenter/2026-maine-sustainability-water-conference/">2026 Maine Sustainability &amp; Water Conference</a>, held at the Augusta Civic Center on March 26. Poster sessions, presentations, and discussion connect our work with the wider research community. We also participate in the Physics of Estuaries and Coastal Seas (PECS) conference.</p><p><a href="news.html#pecs-2026">Read about SWELL at PECS 2026 <span aria-hidden="true">↗</span></a></p></div>
     </article>
   </div>
 </section>
