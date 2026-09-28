@@ -1,0 +1,13 @@
+/_site/
+/.quarto/
+/.build/
+/.Rproj.user/
+/.Rhistory
+/.RData
+
+**/*.quarto_ipynb
+
+# Archived templates and local preview entry point
+/swell-quarto-final/
+/swell-quarto-final.tar.gz
+/swell-lab-preview.html

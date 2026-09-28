@@ -1,0 +1,158 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+<!-- PASSWORD GATE -->
+<div id="sw-gate">
+  <div class="sw-gate-inner">
+    <img src="images/logo_final.png" alt="SWELL Lab">
+    <span class="sw-gate-ornament">✦ ─── ✦ ─── ✦</span>
+    <h2>Lab Members Only</h2>
+    <p>This area contains internal resources for current SWELL Lab members — meeting notes, field protocols, data access, computing guides, and lab policies.</p>
+    <span class="sw-gate-ornament">✦ ─── ✦ ─── ✦</span>
+    <input type="password" id="sw-pw" class="sw-input" placeholder="Enter lab password" autocomplete="off" style="text-align:center;letter-spacing:0.2em;margin-top:1rem;">
+    <div class="sw-pw-error" id="sw-pw-error">Incorrect password — please try again.</div>
+    <button onclick="swCheckPw()" class="sw-btn sw-btn-dark" style="width:100%;margin-top:0.75rem;">Enter</button>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.82rem;color:var(--warm-grey);margin-top:1.5rem;">Forgot the password? Contact the PI or lab manager.</p>
+  </div>
+</div>
+
+<!-- MEMBERS CONTENT — shown after correct password -->
+<div id="sw-members-content">
+
+<div class="sw-page-hero">
+  <div class="sw-wrap">
+    <span class="sw-eyebrow">Internal · Members Only</span>
+    <h1>Lab Members Area</h1>
+    <p>Internal resources for current SWELL Lab researchers.</p>
+  </div>
+</div>
+
+<div class="sw-wrap sw-section">
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin-bottom:3rem;">
+
+  <div class="sw-box">
+    <h4>Field Protocols</h4>
+    <p>
+      <a href="#">Field Safety Protocol (PDF)</a><br>
+      <a href="#">ADCP Deployment Guide</a><br>
+      <a href="#">Sediment Core Procedures</a><br>
+      <a href="#">Lab Boat Training</a><br>
+      <a href="#">Chemical Handling SOP</a>
+    </p>
+  </div>
+
+  <div class="sw-box">
+    <h4>Data & Computing</h4>
+    <p>
+      <a href="#">Lab Server Access Guide</a><br>
+      <a href="#">HPC Cluster Quickstart</a><br>
+      <a href="#">Shared Data Folder</a><br>
+      <a href="#">Model Configuration Templates</a><br>
+      <a href="#">GitHub Organization ↗</a>
+    </p>
+  </div>
+
+  <div class="sw-box">
+    <h4>Lab Policies</h4>
+    <p>
+      <a href="#">Lab Handbook (PDF)</a><br>
+      <a href="#">Authorship Policy</a><br>
+      <a href="#">Travel & Reimbursement</a><br>
+      <a href="#">Annual Review Template</a><br>
+      <a href="#">DEI Statement</a>
+    </p>
+  </div>
+
+</div>
+
+<div class="sw-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+<div class="sw-section-head">
+  <span class="sw-eyebrow">Internal Schedule</span>
+  <h2>Meeting Calendar</h2>
+</div>
+
+<table class="sw-table">
+<thead>
+<tr><th>Meeting</th><th>When</th><th>Where</th></tr>
+</thead>
+<tbody>
+<tr><td>Lab Group Meeting</td><td>Tuesdays, 10:00–11:30 am</td><td>[Room] / Zoom</td></tr>
+<tr><td>One-on-Ones (PI)</td><td>By appointment</td><td>PI Office</td></tr>
+<tr><td>Journal Club</td><td>Fridays, 12:00–1:00 pm (bi-weekly)</td><td>[Room]</td></tr>
+<tr><td>Field Planning</td><td>As needed</td><td>Slack #field-logistics</td></tr>
+</tbody>
+</table>
+
+<div class="sw-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+<div class="sw-section-head">
+  <span class="sw-eyebrow">In Progress</span>
+  <h2>Manuscripts in Preparation</h2>
+</div>
+
+<table class="sw-table">
+<thead>
+<tr><th>Working Title</th><th>Lead Author</th><th>Target Journal</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr><td>[Title]</td><td>[Name]</td><td>JGR-Oceans</td><td>In revision</td></tr>
+<tr><td>[Title]</td><td>[Name]</td><td>Estuaries & Coasts</td><td>In preparation</td></tr>
+<tr><td>[Title]</td><td>PI</td><td>Nature Geoscience</td><td>In preparation</td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+<script>
+// ── Change this to your actual lab password ──────────────
+const SW_PASSWORD = 'swelllab2025';
+
+function swCheckPw() {
+  const val = document.getElementById('sw-pw').value;
+  const err = document.getElementById('sw-pw-error');
+  if (val === SW_PASSWORD) {
+    document.getElementById('sw-gate').style.display = 'none';
+    document.getElementById('sw-members-content').style.display = 'block';
+    sessionStorage.setItem('swell_auth', '1');
+    err.style.display = 'none';
+  } else {
+    err.style.display = 'block';
+    document.getElementById('sw-pw').value = '';
+    document.getElementById('sw-pw').focus();
+    // Shake the gate box
+    const box = document.querySelector('.sw-gate-inner');
+    box.style.animation = 'swShake 0.4s ease';
+    setTimeout(() => { box.style.animation = ''; }, 450);
+  }
+}
+
+// Enter key support
+document.addEventListener('DOMContentLoaded', function () {
+  const inp = document.getElementById('sw-pw');
+  if (inp) {
+    inp.focus();
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') swCheckPw(); });
+  }
+  // Persist across page refreshes in same session
+  if (sessionStorage.getItem('swell_auth') === '1') {
+    document.getElementById('sw-gate').style.display = 'none';
+    document.getElementById('sw-members-content').style.display = 'block';
+  }
+});
+</script>
+
+<style>
+@keyframes swShake {
+  0%,100% { transform: translateX(0); }
+  20%      { transform: translateX(-10px); }
+  40%      { transform: translateX(10px); }
+  60%      { transform: translateX(-6px); }
+  80%      { transform: translateX(6px); }
+}
+</style>

@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - research.qmd
+    - people.qmd
+    - news.qmd
+    - positions.qmd
+    - contact.qmd
+  resources:
+    - images/
+    - site.js
+    - .nojekyll
+    - "!swell-quarto-final/**"
+    - "!swell-quarto-final.tar.gz"
+    - "!swell-lab-preview.html"
+    - "!news/**"
+    - "!README.md"
+    - "!CONTENT-CHECKLIST.md"
+    - "!ACCESSIBILITY.md"
+    - "!scripts/**"
+    - "!.build/**"
+    - "!ACCESSIBILITY-RESULTS.json"
+
+website:
+  title: "SWELL Lab"
+  search: false
+  navbar: false
+
+format:
+  html:
+    lang: en
+    theme: [cosmo, swell-theme.scss]
+    css: swell.css
+    toc: false
+    anchor-sections: false
+    title-block-banner: false
+    template-partials:
+      - _includes/title-block.html
+    page-layout: full
+    include-before-body: _includes/header.html
+    include-after-body: _includes/footer.html
+    grid:
+      sidebar-width: 0px
+      margin-width: 0px
+      body-width: 1440px

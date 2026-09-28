@@ -1,0 +1,38 @@
+---
+title: "Open Positions"
+description: "Inquire about future research opportunities with SWELL Lab at the University of Maine."
+---
+
+```{=html}
+<div class="shell">
+
+<header class="page-hero positions-hero">
+  <svg class="sailing-background" viewBox="0 0 1320 340" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+    <defs><linearGradient id="sailing-water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e0e8e4"/><stop offset="1" stop-color="#e0e8e4" stop-opacity="0"/></linearGradient></defs>
+    <path d="M0 259 Q110 245 220 259 T440 259 T660 259 T880 259 T1100 259 T1320 259 V340H0Z" fill="url(#sailing-water)"/>
+    <g class="sailing-waves" fill="none" stroke="#829892" stroke-width="1.5" opacity=".45">
+      <path d="M-220 259 Q-110 245 0 259 T220 259 T440 259 T660 259 T880 259 T1100 259 T1320 259 T1540 259"/>
+      <path d="M-120 282 Q-10 268 100 282 T320 282 T540 282 T760 282 T980 282 T1200 282 T1420 282" opacity=".5"/>
+    </g>
+    <g class="sailing-voyage">
+      <g class="sailing-boat" stroke="#567a74" stroke-width="2" stroke-linejoin="round">
+        <path d="M865 257h-80m62 9h-96m120 8h-58" fill="none" stroke="#829892" stroke-linecap="round" opacity=".6"/>
+        <path d="M909 237V70" fill="none"/>
+        <path d="M902 83 Q890 149 841 220H902Z" fill="#b8cbc4"/>
+        <path d="M918 108 Q955 178 978 220H918Z" fill="#e0e8e4"/>
+        <path d="M855 226H977" fill="none"/>
+        <path d="M842 236 Q906 246 992 232L974 254Q907 270 861 254Z" fill="#b8cbc4"/>
+        <path d="M874 237l8-13h39l12 16" fill="#e0e8e4"/>
+        <path d="M909 70l24 8-24 7" fill="#829892"/>
+      </g>
+    </g>
+  </svg>
+  <div class="positions-hero-copy"><h1>Bring your curiosity.</h1><p class="lead">Interested in coastal and estuarine science? We welcome conversations about future research opportunities at SWELL.</p></div>
+  <div class="sailing-controls"><button class="sailing-toggle" type="button" aria-pressed="false" hidden>Pause animation</button></div>
+</header>
+<section class="section intro-grid" aria-labelledby="opportunities"><div><p class="eyebrow">Open positions</p><h2 id="opportunities">A conversation<br>starts here.</h2></div><div><p class="lead">Specific openings have not yet been posted on this website.</p><p>Prospective students and postdoctoral researchers are welcome to inquire about research interests and potential opportunities. An inquiry does not imply that a funded position is available.</p><a class="button" href="contact.html">Contact Kim <span aria-hidden="true">↗</span></a></div></section>
+<section class="section" aria-labelledby="inquiry"><p class="eyebrow">Introduce yourself</p><h2 id="inquiry">Tell us what moves you.</h2><p>In your message, share your current studies or research background, the coastal questions you want to explore, and your anticipated timeline. Kim can advise on whether your interests align with upcoming opportunities.</p><p>When confirmed openings become available, this page will include their research focus, funding information, and application instructions.</p></section>
+
+<section class="section graduate-card" aria-labelledby="graduate-school"><p class="eyebrow">Plan your next step</p><h2 id="graduate-school">Graduate study at UMaine.</h2><p>Explore the University of Maine’s graduate programs and review the Graduate School’s application guidance. Contact Kim to discuss how your research interests connect with SWELL Lab.</p><div class="actions"><a class="button" href="https://umaine.edu/graduate/apply/">How to apply to UMaine <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://umaine.edu/graduate/programs/">Explore UMaine graduate programs <span aria-hidden="true">↗</span></a></div></section>
+</div>
+```
