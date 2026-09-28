@@ -14,7 +14,7 @@ const server = Deno.serve({ hostname: '127.0.0.1', port: 8765, onListen() {} }, 
   const path = decodeURIComponent(url.pathname.slice(prefix.length)) || 'index.html';
   if (path.includes('..')) return new Response('Forbidden', { status: 403 });
   try {
-    let data = await Deno.readFile(`${root}/_site/${path}`);
+    let data = await Deno.readFile(`${root}/docs/${path}`);
     if (path === 'contact.html' && url.searchParams.has('configured')) {
       data = new TextEncoder().encode(new TextDecoder().decode(data).replace(/data-recipient="[^"]*"/, 'data-recipient="test@example.org"').replace(/data-cc="[^"]*"/, 'data-cc="copy@example.org"'));
     }

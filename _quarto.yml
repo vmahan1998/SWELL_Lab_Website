@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
   render:
     - index.qmd
     - research.qmd
@@ -21,6 +21,7 @@ project:
     - "!ACCESSIBILITY.md"
     - "!scripts/**"
     - "!.build/**"
+    - "!_site/**"
     - "!ACCESSIBILITY-RESULTS.json"
 
 website:

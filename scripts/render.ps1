@@ -8,8 +8,8 @@ if (-not $QuartoPath) {
 }
 if (-not (Test-Path -LiteralPath $QuartoPath)) { throw 'Quarto was not found. Supply -QuartoPath with the installed executable path.' }
 # Only remove generated output within this project; stale template pages must not ship.
-$outputPath = [System.IO.Path]::GetFullPath((Join-Path $projectRoot '_site'))
-if ($outputPath -ne ($projectRoot + '\_site')) { throw 'Unexpected output path.' }
+$outputPath = [System.IO.Path]::GetFullPath((Join-Path $projectRoot 'docs'))
+if ($outputPath -ne ($projectRoot + '\docs')) { throw 'Unexpected output path.' }
 if (Test-Path -LiteralPath $outputPath) { Remove-Item -LiteralPath $outputPath -Recurse -Force }
 Push-Location $projectRoot
 try {

@@ -10,7 +10,7 @@ Open `SWELL_Lab_Website.Rproj` in RStudio. In its Terminal:
 quarto preview
 ```
 
-For a clean Windows build (removes only the generated `_site` directory):
+For a clean Windows build (removes only the generated `docs` directory):
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/render.ps1
@@ -18,7 +18,7 @@ powershell -ExecutionPolicy Bypass -File scripts/render.ps1
 
 The script locates Quarto on PATH or uses the RStudio-bundled executable. An explicit installation can be selected with `-QuartoPath`. On this computer, the executable is `C:\Program Files\RStudio\resources\app\bin\quarto\bin\quarto.exe`. The bundled .cmd launcher has a path-with-spaces issue; use the .exe or the script.
 
-On other systems, start with a clean output directory and run `quarto render`. Open `_site/index.html` to review the built site. Do not edit generated HTML.
+On other systems, start with a clean output directory and run `quarto render`. Open `docs/index.html` to review the built site. Do not edit generated HTML.
 
 ## Editing content
 
@@ -67,20 +67,19 @@ The script enables “Open email draft” only with a valid recipient. Prepared 
 
 The site uses relative URLs and works at `https://USERNAME.github.io/REPOSITORY/` as well as at a custom domain. No backend or paid form service is required.
 
-The workflow in `.github/workflows/pages.yml` renders the six public pages with Quarto 1.10.18 (matching the local build) and deploys only `_site/`. Each push to `main` publishes an update; it can also be run manually from the Actions tab. Generated files do not need to be committed.
+Quarto builds the six public pages into `docs/`. Commit this generated folder alongside the source so GitHub Pages can publish it directly. Rebuild after every source change; do not edit generated HTML.
 
 ### First deployment
 
 1. Review CONTENT-CHECKLIST.md and ACCESSIBILITY.md for remaining content and manual checks.
-2. Create or select the intended GitHub repository and connect this source folder to it. For a new repository, use `main` as the source branch. The workflow assumes this name.
-3. In the repository's **Settings > Pages > Build and deployment**, set **Source** to **GitHub Actions**.
-4. Commit and push the source, including `.github/workflows/pages.yml`. If the first push happened before Pages was enabled, open **Actions > Deploy website to GitHub Pages > Run workflow** and select `main`.
-5. Wait for both the build and deploy jobs to succeed. The deployment's `github-pages` environment links to the published site.
-6. Check the live site's six pages, images, navigation, keyboard access, and contact behavior.
+2. Run `powershell -ExecutionPolicy Bypass -File scripts/render.ps1` (or `quarto render`).
+3. Commit and push the source changes and the complete `docs/` folder to `main`.
+4. In the repository's **Settings > Pages > Build and deployment**, select **Deploy from a branch**, branch **main**, folder **/docs**, then **Save**.
+5. Wait for GitHub Pages deployment to complete, then review `https://vmahan1998.github.io/SWELL_Lab_Website/`.
 
-This workflow uses GitHub's built-in token; no personal access token or `gh-pages` branch is needed. See [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+For later updates, rebuild locally and commit and push the updated source and `docs/`. The custom deployment workflow has been removed so deployment uses the branch settings. See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-The render allowlist and resource exclusions in `_quarto.yml` keep old template content out of the published build. `.nojekyll` is included for Pages. Archived templates, local previews, generated files, and `.build/` review materials are excluded from Git. Earlier generated files are preserved locally in `.build/previous-site`.
+The render allowlist and resource exclusions in `_quarto.yml` keep old template content out of the published build. `docs/.nojekyll` is included for Pages. Archived templates, local previews, legacy `_site/` output, and `.build/` review materials are excluded from Git. Earlier generated files are preserved locally in `.build/previous-site`.
 
 ## Accessibility checks
 
