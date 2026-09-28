@@ -43,15 +43,18 @@ description: "Meet SWELL Lab: coastal and estuarine research led by Dr. Kimberly
     <section class="landscape-carousel" aria-roledescription="carousel" aria-label="Coastal landscapes">
       <div class="landscape-window">
         <div class="landscape-track" aria-live="off">
-          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="1 of 3"><img src="images/landscape/PXL_20221231_163200021.jpg" alt="Seaweed-covered rocks along an open coastline beneath an overcast sky." width="4080" height="3072" decoding="async"></div>
-          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true"><img src="images/landscape/PXL_20221231_165129265.jpg" alt="A sheltered inlet reflecting evergreen trees, with exposed tidal flats in the foreground." width="4080" height="3072" decoding="async" loading="lazy"></div>
-          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true"><img src="images/landscape/PXL_20221231_171533187.jpg" alt="Evergreen trees beside a rocky shoreline and calm coastal water." width="4080" height="3072" decoding="async" loading="lazy"></div>
+          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="1 of 6"><img src="images/landscape/PXL_20221231_171533187.jpg" alt="Evergreen trees beside a rocky shoreline and calm coastal water." width="4080" height="3072" decoding="async"></div>
+          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="2 of 6" aria-hidden="true"><img src="images/landscape/PXL_20231013_103931793.jpg" alt="A weathered boat beside an autumn shoreline reflected in calm water." width="4080" height="3072" decoding="async" loading="lazy"></div>
+          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="3 of 6" aria-hidden="true"><img src="images/landscape/PXL_20230929_083537181.NIGHT.jpg" alt="A boat moored beside a lit dock in thick nighttime fog." width="4080" height="3072" decoding="async" loading="lazy"></div>
+          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="4 of 6" aria-hidden="true"><img src="images/landscape/PXL_20230929_104903860.jpg" alt="A motorboat wake stretching between forested shores into fog." width="4080" height="3072" decoding="async" loading="lazy"></div>
+          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="5 of 6" aria-hidden="true"><img src="images/landscape/091716_HH_DSC_3059.jpg" alt="A boat beneath a pastel evening sky." width="7360" height="4912" decoding="async" loading="lazy"></div>
+          <div class="landscape-slide" role="group" aria-roledescription="slide" aria-label="6 of 6" aria-hidden="true"><img src="images/landscape/PXL_20221231_163200021.jpg" alt="Seaweed-covered rocks along an open coastline beneath an overcast sky." width="4080" height="3072" decoding="async" loading="lazy"></div>
         </div>
         <p class="landscape-caption">The coast is our common ground.</p>
       </div>
       <div class="landscape-controls" hidden>
         <button class="slide-playback" type="button">Pause slideshow</button>
-        <div class="slide-navigation"><button class="slide-previous" type="button" aria-label="Previous photograph">←</button><span class="slide-count" aria-live="off">1 / 3</span><button class="slide-next" type="button" aria-label="Next photograph">→</button></div>
+        <div class="slide-navigation"><button class="slide-previous" type="button" aria-label="Previous photograph">←</button><span class="slide-count" aria-live="off">1 / 6</span><button class="slide-next" type="button" aria-label="Next photograph">→</button></div>
       </div>
     </section>
   </div>
